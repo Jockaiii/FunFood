@@ -1,10 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react'
-/* import './About.css' */
+import './HomeView.css'
 import Recipe from './recipe/Recipe'
 import {useLocation, useHistory} from 'react-router-dom'
 import RoutingPath from '../../routes/RoutingPath'
-import LoadingImage from '../../shared/api/images/LoadingImage.gif'
-/* import LocalStorage from '../../shared/cache/LocalStorage' */
+import LoadingImage from '../../shared/images/LoadingImage.gif'
+ import LocalStorage from '../../shared/cache/LocalStorage'
 import UserContext from '../../shared/provider/UserContext'
 
 export const HomeView = () => {
@@ -22,14 +22,11 @@ export const HomeView = () => {
 
 			useEffect (() => {
 				getRecipes();
-			}, [query]);
-
-						
+			}, [query]);		
 
 			useEffect(()=> {
 					localStorage.setItem("recipes", JSON.stringify(recipes))
 				}, [recipes])			
-			
 			
 			const getRecipes = async() =>{ 
 				const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`);
@@ -43,7 +40,6 @@ export const HomeView = () => {
 			 const getSearch = event => {
 				 event.preventDefault()
 				 setQuery(search)}
-
 			
 				 const displayData =()=> {
 					if (!loading) {
@@ -63,10 +59,8 @@ export const HomeView = () => {
 								
 							}}; 
 
-				return (				
-					
-					<div>		 		
-							
+				return (								
+					<div>		 			
 							<p> Hi User, please types in any ingredient in the Search Box, and the recipes with that ingredient would be reflected below</p>
 							<div className = "Homepage">	
 							<form onSubmit ={getSearch} className = "searchform">
@@ -82,8 +76,5 @@ export const HomeView = () => {
 						{displayData()}
 						<hr />
 							<div> {name} </div>					
-					</div>
-					
-			
-			
+					</div>			
 				)}
