@@ -1,8 +1,12 @@
+import { Routing } from './routes/Routing'
+import { NavigationBar } from './components/navigationbar/NavigationBar'
+import './shared/global/Global.css'
+
 function App() {
   return (
-    <div>
-      <h1>FunFood</h1>
-    </div>
+    <Routing> 
+        <NavigationBar />
+      </Routing>
   )
 }
 
