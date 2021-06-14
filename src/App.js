@@ -4,9 +4,9 @@ import './shared/global/Global.css'
 
 function App() {
   return (
-    <Routing> 
-        <NavigationBar />
-      </Routing>
+    <Routing>
+      <NavigationBar />
+    </Routing>
   )
 }
 

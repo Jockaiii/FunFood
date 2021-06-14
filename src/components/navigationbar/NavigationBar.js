@@ -9,9 +9,9 @@ export const NavigationBar = () => {
     return (
         <div className="NavigationBarWrapper">
             <img onClick={() => history.push('/')}
-            className="LogoType"
-            src={LogoType} 
-            alt="oops" />
+                className="LogoType"
+                src={LogoType}
+                alt="oops" />
             <span className="View1" onClick={() => history.push('/ContactView')}>Contact</span>
         </div>
     )

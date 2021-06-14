@@ -1,3 +1,3 @@
 const user = "user"
 
-export default {user}
+export default { user }
