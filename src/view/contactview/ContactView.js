@@ -7,8 +7,8 @@ export const ContactView = () => {
     const history = useHistory()
     return (
         <div>
-            <button> E mail </button>
-            <button> Mobile </button>
+            <p> E mail: funfood93@gmail.com </p>
+            <p> Mobile: 0733****** </p>
 
 
             <button onClick={() => history.push('./HomeView')}> Go to Homepage</button>
