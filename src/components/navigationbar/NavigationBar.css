@@ -8,7 +8,7 @@
     width: 100px;
 }
 
-.LogoType, .View1, .View2 {
+.LogoType, .aboutButton, .contactButton {
     align-self: center;
     cursor: pointer;
 }
