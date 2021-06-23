@@ -20,18 +20,18 @@ export const HomeView = () => {
 	const name = useContext(UserContext)
 
 	useEffect(() => {
-		getRecipes();
-	}, [query]);
+		getRecipes()
+	}, [query])
 
 	useEffect(() => {
 		localStorage.setItem("recipes", JSON.stringify(recipes))
 	}, [recipes])
 
 	const getRecipes = async () => {
-		const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`);
-		const data = await response.json();
-		setRecipes(data.hits);
-		console.log(data.hits);
+		const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`)
+		const data = await response.json()
+		setRecipes(data.hits)
+		console.log(data.hits)
 	}
 
 	const updateSearch = event => {
@@ -51,7 +51,7 @@ export const HomeView = () => {
 						<Recipe key={recipe.recipe.label}
 							title={recipe.recipe.label}
 							image={recipe.recipe.image}
-							ingredients={recipe.recipe.ingredients }
+							ingredients={recipe.recipe.ingredients}
 							url={recipe.recipe.url} />))}
 				</div>
 
@@ -62,7 +62,7 @@ export const HomeView = () => {
 			return <img src={LoadingImage} alt={'error !'} />
 
 		}
-	};
+	}
 
 	return (
 		<div>

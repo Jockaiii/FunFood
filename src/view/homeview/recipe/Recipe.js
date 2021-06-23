@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 export const Recipe = ({ title, image, ingredients, url }) => {
     return (
         <div>
