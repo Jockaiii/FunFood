@@ -12,7 +12,8 @@ export const NavigationBar = () => {
                 className="LogoType"
                 src={LogoType}
                 alt="oops" />
-            <span className="View1" onClick={() => history.push('/ContactView')}>Contact</span>
+            <span className="aboutButton" onClick={() => history.push('/AboutView')}>About</span>
+            <span className="contactButton" onClick={() => history.push('/ContactView')}>Contact</span>
         </div>
     )
 }
