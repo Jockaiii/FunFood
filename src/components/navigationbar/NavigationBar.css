@@ -1,11 +1,12 @@
 .NavigationBarWrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    background-color: rgb(235, 195, 64);;
+    background-color: greenyellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .LogoType {
-    width: 100px;
+    width: 80px;
 }
 
 .LogoType, .aboutButton, .contactButton {

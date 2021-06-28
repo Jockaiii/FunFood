@@ -3,7 +3,7 @@ import './Footer.css'
 export const Footer = () => {
     return (
         <div className = "footer">
-            <p> this is footer </p>
+            <li>&copy; 2021 Copyright FunFood Inc. </li>
         </div>
     )
 }
