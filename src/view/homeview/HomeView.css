@@ -26,7 +26,7 @@ body {
 }
 
 .searchbutton {
-    background: grey;
+    background: rgb(187, 186, 186);
     padding: 5px 5px;
     color: black;
 }

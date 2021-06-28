@@ -1,7 +1,7 @@
 .NavigationBarWrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    background-color: greenyellow;
+    background-color: rgb(241, 248, 140);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
