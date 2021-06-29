@@ -58,3 +58,9 @@ font-size: 15px;
     flex-wrap: wrap;
     border-radius: 30%;
 }
+
+.recipes.ingredients {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
