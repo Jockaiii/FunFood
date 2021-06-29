@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavigationBar.css'
 import { useHistory } from 'react-router-dom'
-import LogoType from '../../shared/images/logotype.svg'
+import LogoType from '../../shared/images/logotype.png'
 
 export const NavigationBar = () => {
     const history = useHistory()

@@ -3,7 +3,6 @@ import './HomeView.css'
 import Recipe from './recipe/Recipe'
 import { useLocation, useHistory } from 'react-router-dom'
 import LoadingImage from '../../shared/images/LoadingImage.gif'
-import LocalStorage from '../../shared/cache/LocalStorage'
 import UserContext from '../../shared/provider/UserContext'
 
 export const HomeView = () => {
