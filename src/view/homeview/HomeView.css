@@ -36,16 +36,7 @@ body {
     justify-content: auto;
     flex-wrap: wrap;
     border-radius: 30%;
-<<<<<<< HEAD
-}
-
-.recipes.ingredients {
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-=======
     padding: 5px 5px;
     margin: 20px;
     align-self: center;*/
->>>>>>> 6ee548ec2e63735627bb7ac59dd11b3a93d37759
 }
